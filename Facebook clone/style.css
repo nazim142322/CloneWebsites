@@ -26,8 +26,7 @@ nav{
     display:flex;
     gap:15px;
     list-style: none;   
-    align-items:center;
-   
+    align-items:center;   
 }
 .nav-left ul li{
     display:grid;
