@@ -94,14 +94,14 @@ nav{
 .left-sidebar{
     background-color:#cbdffa;
     flex-basis: 25%;
-    height:100vh;
+    height:100vh;    
+}
+.main-content{
+    flex-basis: 47%;
 }
 .right-sidebar{
     background-color:#cbdffa;
     flex-basis: 25%;      
-}
-.main-content{
-    flex-basis: 47%;
 }
 /* .imp-links{
     display:flex;
@@ -116,13 +116,15 @@ nav{
     gap:5px; 
     border:1px solid green;   
 } */
+.imp-links{border:1px solid blue;
+}
 .imp-links a{
     text-decoration:none;   
     /* border:1px solid green; */
     display:flex;
     align-items:center;
     gap:5px;
-    margin-bottom:30px; 
+    margin-bottom:30px;
 }
 .imp-links img{
     width:30px;
