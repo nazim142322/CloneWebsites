@@ -66,7 +66,7 @@ nav{
 }
 .nav-user-icon{
     display:grid;
-    place-items:center;
+    place-items:center;    
 }
 .nav-user-icon img{
     max-width:40px;
@@ -85,23 +85,24 @@ nav{
     background-color: #41db51;
     position:absolute;
     top:0;
-    right:0;    
+    right:0;
 }
 .container{
+    border:1px solid red;
     display:flex;
     justify-content: space-between;
     padding:13px 5%;
 }
 .left-sidebar{
-    /* background-color:#cbdffa; */
+    background-color:#cbdffa;
     flex-basis: 25%;
     align-self:flex-start; 
     position:sticky;
     top:0;
-
 }
 .main-content{
     flex-basis: 47%;
+    border:1px solid blue;
 }
 .right-sidebar{
     background-color:#fff;
@@ -113,6 +114,7 @@ nav{
     position:sticky;
     top:0;     
 }
+/*----------- left-sidebar-------------- */
 /* .imp-links{
     display:flex;
     flex-direction:column;
@@ -139,7 +141,7 @@ nav{
 .imp-links img{
     width:25px;
 }
-.imp-links a:last-child{
+.imp-links a:last-child{   
     color:#1876f2;
 }
 .imp-links{
@@ -154,8 +156,8 @@ nav{
     max-width:40px;
     border-radius:4px;
 }
-.sidebar-title{
-    /* border:1px solid green; */
+/*----------- right-sidebar-------------- */
+.sidebar-title{   
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -175,7 +177,7 @@ nav{
     gap:15px;
     margin-bottom:20px;
     align-items:center;
-    font-size:14px;
+    font-size:16px;
 }
 .left-event{
     height:65px;
@@ -190,16 +192,7 @@ nav{
 .event h3{
     /* border:1px solid red; */
 }
-.event p{    
-    font-size:12px;
-    padding:5px 0;
-}
-.event a{
-    text-decoration:none;
-    color:#1876f2;
-}
 .left-event span{
-    /* border:1px solid green; */
     position:absolute;
     bottom:0;
     right:0;
@@ -208,6 +201,14 @@ nav{
     color:white;
     font-size:10px;
     padding:4px 0; 
+}
+.event p{    
+    font-size:12px;
+    padding:5px 0;
+}
+.event a{
+    text-decoration:none;
+    color:#1876f2;
 }
 .sidebar-ads{
     width:100%;
@@ -226,5 +227,69 @@ nav{
 }
 .online-list .online::after{
     top:unset;
-    bottom:0;
+    bottom:5px;
+}
+/*-----------main-content-------------- */
+.story-gallery{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+    border:1px solid green;
+}
+.story{
+    /* border:1px solid red; */
+    flex-basis:18%;
+    padding-top:32%;  /*  as per image size */
+    position:relative;
+    /* background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(images/status-1.png); */
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius:10px;
+}
+.story img{
+    border:2px solid #1876f2;
+    position:absolute;
+    width:45px;
+    border-radius:50%;
+    top:10px;
+    left:10px;
+    padding:2px;
+    background-color: white;    
+}
+.story p{
+    position:absolute;
+    bottom:10px;
+    width:100%;
+    text-align:center;
+    color:white;
+    font-size:14px;
+}
+.story1{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(images/status-1.png);
+}
+.story2{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(images/status-2.png);
+}
+.story3{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(images/status-3.png);
+}
+.story4{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(images/status-4.png);
+}
+.story5{
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(images/status-5.png);
+}
+
+.story.story1 img{
+    /* top:50%;    
+    left:50%;   
+    transform:translate(-50%, -50%); */
+    top:unset;
+    left:50%;
+    transform:translate(-50%);
+    bottom:40px;
+    border:0;
+    padding:0;
+    background-color: transparent; 
 }
