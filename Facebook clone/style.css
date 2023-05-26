@@ -430,8 +430,7 @@ footer{
     padding: 10px 0 20px;
 }
 /*---------------settings menu--------------- */
-.settings-menu{
-    /* border:1px solid red; */
+.settings-menu{   
     position:absolute;
     width:90%;
     max-width:350px;
@@ -440,22 +439,21 @@ footer{
     box-shadow:0 0 10px rgba(0, 0, 0, 0.4);
     border-radius:4px;
     overflow:hidden;
-    top:105%;
+    top:100%;
     right:5%; 
     max-height:0;
-    transition: max-height 0.3s;
+    transition: max-height 0.2s;    
 }
 .settings-menu-height{
-   max-height:450px;
+   max-height:400px;   
 }
-
 .user-profile a {
     font-size:12px;
     color:#1876f2;
     text-decoration:none;
 }
 .settings-menu-inner{
-    padding:20px;
+    padding:20px;    
 }
 .settings-menu hr{
     border:0;
@@ -481,4 +479,29 @@ footer{
     text-decoration:none;
     color:#626262;
     /* border:1px solid green; */
+}
+/*--------------dark btn--------------- */
+#dark-btn{    
+    position:absolute;
+    top:20px;
+    right:20px;
+    background:#ccc;
+    width:45px;
+    border-radius:15px;
+    padding:2px 3px;
+    display:flex;
+    align-items: center;
+    transition: padding-left 0.5s, background 0.5s;
+    cursor:pointer;
+}
+#dark-btn span{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#fff;
+    /* display:inline-block; */
+}
+#dark-btn.dark-btn-on{
+    padding-left:24px;
+    background:#212020;
 }
