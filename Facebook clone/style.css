@@ -502,9 +502,10 @@ footer{
     padding:2px 3px;
     display:flex;
     align-items: center;
-    transition: padding-left 0.5s, background 0.5s;
+    transition: padding-left 0.5s, background 0.5s, border 0.5s;
     cursor:pointer;
     /* padding-left:24px; */
+    
 }
 #dark-btn span{
     width:18px;
@@ -515,5 +516,6 @@ footer{
 }
 #dark-btn.dark-btn-on{
     padding-left:24px;
-    background:#0a0a0a;
+    background:#0a0a0a;    
+    border:1px solid #9a9a9a;
 }
