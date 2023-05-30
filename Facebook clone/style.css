@@ -1,17 +1,28 @@
-
 *{
     padding:0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
     /* border:1px solid green; */
 }
-body{
-    background-color:#efefef;
+:root {
+    --body-color:#efefef;
+    --nav-color: #1876f2;
+    --bg-color: #fff;
 }
-/* navigation */
+.dark-theme{
+    --body-color:#0a0a0a;
+    --nav-color:#000;
+    --bg-color: #000;
+    /* --bg-color: #0d1117; */
+}
+body{
+    background-color:var(--body-color);
+    transition: background 0.3s;
+}
+/*---------------- navigation -------------------*/
 nav{
     display:flex;
-    background-color: #1876f2;
+    background-color:var(--nav-color);
     padding:10px 5%;;
     align-items:center;
     justify-content:space-between;  
@@ -104,7 +115,7 @@ nav{
     /* border:1px solid blue; */
 }
 .right-sidebar{
-    background-color:#fff;
+    background-color:var(--bg-color);
     flex-basis: 25%;
     align-self:flex-start; 
     padding:20px;
@@ -293,7 +304,7 @@ nav{
 /*--------- write-post-container--------- */
 .write-post-container{
     width:100%;
-    background-color:white;
+    background-color:var(--bg-color);
     border-radius:6px;
     padding:20px;
     color:#626262;
@@ -353,7 +364,7 @@ nav{
 /*--------------- post container--------------- */
 .post-container{
     width:100%;
-    background-color: #fff;
+    background-color:var(--bg-color);
     border-radius:6px;
     padding:20px;
     color:#626262;
@@ -435,7 +446,7 @@ footer{
     width:90%;
     max-width:350px;
     /* height:500px; */   
-    background:#fff;
+    background:var(--bg-color);
     box-shadow:0 0 10px rgba(0, 0, 0, 0.4);
     border-radius:4px;
     overflow:hidden;
@@ -493,15 +504,16 @@ footer{
     align-items: center;
     transition: padding-left 0.5s, background 0.5s;
     cursor:pointer;
+    /* padding-left:24px; */
 }
 #dark-btn span{
     width:18px;
     height:18px;
     border-radius:50%;
     background:#fff;
-    /* display:inline-block; */
+    display:inline-block;    
 }
 #dark-btn.dark-btn-on{
     padding-left:24px;
-    background:#212020;
+    background:#0a0a0a;
 }
