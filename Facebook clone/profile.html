@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SocialBook Media Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul>
+                    <li><img src="images/notification.png" alt=""></li>
+                    <li><img src="images/inbox.png" alt=""></li>
+                    <li><img src="images/video.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="searchbox">
+                    <img src="images/search.png" alt="search">
+                    <input type="text" placeholder="search">
+                </div>
+                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                    <img src="images/profile-pic.png" alt="">
+                </div>
+            </div>
+            <!-------------- settings menu ------------------->
+            <div class="settings-menu">
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+                <div class="settings-menu-inner">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="uper profile">
+                        <div>
+                            <p>Nazim Khan</p>
+                            <a href="#">See your profile</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="images/feedback.png" alt="uper profile">
+                        <div>
+                            <p>Give Feedback</p>
+                            <a href="#">Help us to improve the new design</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="setting-links">
+                        <img src="images/setting.png" alt="" class="settings-icon">
+                        <a href="">Settings & Privacy
+                            <img src="images/arrow.png" alt="" width="10"></a>
+                    </div>
+                    <div class="setting-links">
+                        <img src="images/help.png" alt="" class="settings-icon">
+                        <a href="">Help & Support
+                            <img src="images/arrow.png" alt="" width="10"></a>
+                    </div>
+                    <div class="setting-links">
+                        <img src="images/display.png" alt="" class="settings-icon">
+                        <a href="">Display & Accessibility
+                            <img src="images/arrow.png" alt="" width="10"></a>
+                    </div>
+                    <div class="setting-links">
+                        <img src="images/logout.png" alt="" class="settings-icon">
+                        <a href="">Logout
+                            <img src="images/arrow.png" alt="" width="10"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-------------- profile page------------------->
+        <div class="profile-container">
+            <img src="images/cover.png" alt="cover image" class="cover-img">
+            <div class="profile-details">
+                <div class="pd-left">
+                    <div class="pd-row">
+                        <img src="images/profile.png" alt="" class="pd-image">
+                        <div>
+                            <h3>Nazim Khan</h3>
+                            <p>120 Friends - 20 Mutual</p>
+                            <img src="images/member-1.png" alt="">
+                            <img src="images/member-2.png" alt="">
+                            <img src="images/member-3.png" alt="">
+                            <img src="images/member-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="pd-right">
+                    <button type="button"><img src="images/add-friends.png">Friend</button>
+                    <button type="button"><img src="images/message.png">Message</button>
+                    <br>
+                    <a href=""><img src="images/more.png" alt=""></a>
+                </div>
+            </div>
+            <div class="profile-info">
+                <div class="info-col">
+                    hello world
+                </div>
+                <div
+                    class="post-col">
+                    <!---- write-post-container -->
+                    <div class="write-post-container">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="uper profile">
+                            <div>
+                                <p>Nazim Khan</p>
+                                <small>Public
+                                    <i class="fi-xwsdxl-caret-solid"></i>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="post-input-container">
+                            <textarea rows="3" placeholder="What is on your mind, Nazim?"></textarea>
+                            <div class="add-post-links">
+                                <a href="#"><img src="images/live-video.png" alt="">Live Video</a>
+                                <a href="#"><img src="images/photo.png" alt="">Photo/Video</a>
+                                <a href="#"><img src="images/feeling.png" alt="">Feeling/Activity
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- first post container -->
+                    <div class="post-container">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="user profile">
+                            <div>
+                                <p>Nazim Khan</p>
+                                <span>June 24 2021, 13:40</span>
+                            </div>
+                            <a href="#">
+                                <i class="fi-xwsrxl-ellipsis"></i>
+                            </a>
+                        </div>
+                        <p class="post-text">Subscribe
+                            <span>@Happy Coding</span>
+                            Youtube Channel                                                                            to watch more video on website development and UI designs
+                            <a href="#">#Happy Coding
+                            </a>
+                            <a href="#">
+                                #Youtube Channel</a>
+                        </p>
+                        <img src="images/feed-image-1.png" alt="" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div class=""><img src="images/like-blue.png" alt="">120</div>
+                            </div>
+                            <div class="activity-icons">
+                                <div class=""><img src="images/comments.png" alt="">80</div>
+                            </div>
+                            <div class="activity-icons">
+                                <div class=""><img src="images/share.png" alt="">75</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="images/profile-pic.png" alt="">
+                                <i class="fi-xwsdxl-caret-solid"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second post container -->
+                    <div class="post-container">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="user profile">
+                            <div>
+                                <p>Nazim Khan</p>
+                                <span>July 24 2021, 12:40</span>
+                            </div>
+                            <a href="#">
+                                <i class="fi-xwsrxl-ellipsis"></i>
+                            </a>
+                        </div>
+                        <p class="post-text">Subscribe
+                            <span>@Happy Coding</span>
+                            Youtube Channel                                                                            to watch more video on website development and UI designs
+                            <a href="#">#Happy Coding
+                            </a>
+                            <a href="#">
+                                #Youtube Channel</a>
+                        </p>
+                        <img src="images/feed-image-2.png" alt="" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div class=""><img src="images/like-blue.png" alt="">100</div>
+                            </div>
+                            <div class="activity-icons">
+                                <div class=""><img src="images/comments.png" alt="">40</div>
+                            </div>
+                            <div class="activity-icons">
+                                <div class=""><img src="images/share.png" alt="">50</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="images/profile-pic.png" alt="">
+                                <i class="fi-xwsdxl-caret-solid"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- third post container -->
+                    <div class="post-container">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="user profile">
+                            <div>
+                                <p>Nazim Khan</p>
+                                <span>July 24 2021, 12:40</span>
+                            </div>
+                            <a href="#">
+                                <i class="fi-xwsrxl-ellipsis"></i>
+                            </a>
+                        </div>
+                        <p class="post-text">Subscribe
+                            <span>@Happy Coding</span>
+                            Youtube Channel to watch more video on website development and UI designs
+                            <a href="#">#Happy Coding
+                            </a>
+                            <a href="#">
+                                #Youtube Channel</a>
+                        </p>
+                        <img src="images/feed-image-3.png" alt="" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div class=""><img src="images/like-blue.png" alt="">100</div>
+                            </div>
+                            <div class="activity-icons">
+                                <div class=""><img src="images/comments.png" alt="">40</div>
+                            </div>
+                            <div class="activity-icons">
+                                <div class=""><img src="images/share.png" alt="">50</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="images/profile-pic.png" alt="">
+                                <i class="fi-xwsdxl-caret-solid"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fourth post container -->
+                    <div class="post-container">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="user profile">
+                            <div>
+                                <p>Nazim Khan</p>
+                                <span>July 24 2021, 12:40</span>
+                            </div>
+                            <a href="#">
+                                <i class="fi-xwsrxl-ellipsis"></i>
+                            </a>
+                        </div>
+                        <p class="post-text">Subscribe
+                            <span>@Happy Coding</span>
+                            Youtube Channel                                                                            to watch more video on website development and UI designs
+                            <a href="#">#Happy Coding
+                            </a>
+                            <a href="#">
+                                #Youtube Channel</a>
+                        </p>
+                        <img src="images/feed-image-4.png" alt="" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div class=""><img src="images/like-blue.png" alt="">100</div>
+                            </div>
+                            <div class="activity-icons">
+                                <div class=""><img src="images/comments.png" alt="">40</div>
+                            </div>
+                            <div class="activity-icons">
+                                <div class=""><img src="images/share.png" alt="">50</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="images/profile-pic.png" alt="">
+                                <i class="fi-xwsdxl-caret-solid"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fifth post container -->
+                    <div class="post-container">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="user profile">
+                            <div>
+                                <p>Nazim Khan</p>
+                                <span>July 24 2021, 12:40</span>
+                            </div>
+                            <a href="#">
+                                <i class="fi-xwsrxl-ellipsis"></i>
+                            </a>
+                        </div>
+                        <p class="post-text">Subscribe
+                            <span>@Happy Coding</span>
+                            Youtube Channel                                                                            to watch more video on website development and UI designs
+                            <a href="#">#Happy Coding
+                            </a>
+                            <a href="#">
+                                #Youtube Channel</a>
+                        </p>
+                        <img src="images/feed-image-5.png" alt="" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div class=""><img src="images/like-blue.png" alt="">100</div>
+                            </div>
+                            <div class="activity-icons">
+                                <div class=""><img src="images/comments.png" alt="">40</div>
+                            </div>
+                            <div class="activity-icons">
+                                <div class=""><img src="images/share.png" alt="">50</div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="images/profile-pic.png" alt="">
+                                <i class="fi-xwsdxl-caret-solid"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright 2023 - Happy Coding</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html></div></body></html>
