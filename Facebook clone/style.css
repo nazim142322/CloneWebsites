@@ -456,7 +456,8 @@ footer{
     transition: max-height 0.2s;    
 }
 .settings-menu-height{
-   max-height:400px;   
+   max-height:400px;
+   border:1px solid #9a9a9a;   
 }
 .user-profile a {
     font-size:12px;
