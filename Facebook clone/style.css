@@ -494,8 +494,8 @@ footer{
 /*--------------dark btn--------------- */
 #dark-btn{    
     position:absolute;
-    top:20px;
-    right:20px;
+    top:18px;
+    right:18px;
     background:#ccc;
     width:45px;
     border-radius:15px;
@@ -505,11 +505,11 @@ footer{
     transition: padding-left 0.5s, background 0.5s, border 0.5s;
     cursor:pointer;
     /* padding-left:24px; */
-    
+    border:1px solid transparent;    
 }
 #dark-btn span{
-    width:18px;
-    height:18px;
+    width:15px;
+    height:15px;
     border-radius:50%;
     background:#fff;
     display:inline-block;    
