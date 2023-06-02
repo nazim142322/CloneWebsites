@@ -530,13 +530,18 @@ footer{
     border-radius:6px;
     margin-bottom: 14px;   
 }
+/*--------- section profile-details------------ */
 .profile-details{
     background:var(--bg-color);
     padding:20px;
     border-radius:4px;    
     display:flex;
     align-items:flex-start;
-    justify-content:space-between;
+    justify-content:space-between; 
+    border:1px solid blue;   
+}
+.pd-left{
+    border:1px solid red;
 }
 .pd-row{
     display:flex;
@@ -546,6 +551,9 @@ footer{
 .pd-image{
     width:100px;
     border-radius:6px;
+}
+.pd-row div{
+    text-align:center;
 }
 .pd-row div h3{
   font-size:25px;
@@ -557,12 +565,15 @@ footer{
 .pd-row div img{
     width:25px;
     border-radius:50%;
-    margin-top:15px;   
+    margin-top:30px;    
+}
+.pd-right{
+    border:1px solid red;
 }
 .pd-right button{
     border:0;
     background:#1876f2;
-    outline:0;
+    /* outline:0; */
     padding:6px 10px;
     display:inline-flex;
     align-items:center;
@@ -593,17 +604,47 @@ footer{
 .pd-right a img{
     width:20px;
 }
+/* ----------section profile-info----------- */
 .profile-info{
     display:flex;
     align-items:flex-start;
     justify-content: space-between;
     margin-top:20px;
+    border:1px solid red;
 }
 .info-col{
-border:1px solid green;
-flex-basis:33%;
+    border:1px solid green;
+    flex-basis:33%;
+    /* padding:0 20px; */
 }
 .post-col{
-border:1px solid red;
-flex-basis:65%;
+    border:1px solid red;
+    flex-basis:65%;
 }
+.profile-intro{
+    background-color:var(--bg-color);
+    padding:20px;
+    border-radius:4px;
+    margin-bottom:20px;
+}
+.profile-intro h3{
+    font-weight: 600;   
+}
+.intro-text{
+    /* border:1px solid yellow; */
+    text-align:center;
+    margin:10px 0;
+    font-size:15px;
+    line-height:1.5;
+}
+.intro-text img{
+    width:15px;
+    margin-bottom:-3px;
+}
+.profile-intro hr{
+    border:0;
+    height:1px;
+    background: #CCC;
+    margin-block:24px 
+}
+/* 3:19 */
