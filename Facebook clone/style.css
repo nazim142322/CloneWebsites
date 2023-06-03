@@ -537,11 +537,9 @@ footer{
     border-radius:4px;    
     display:flex;
     align-items:flex-start;
-    justify-content:space-between; 
-    border:1px solid blue;   
+    justify-content:space-between;    
 }
-.pd-left{
-    border:1px solid red;
+.pd-left{    
 }
 .pd-row{
     display:flex;
@@ -567,8 +565,7 @@ footer{
     border-radius:50%;
     margin-top:30px;    
 }
-.pd-right{
-    border:1px solid red;
+.pd-right{   
 }
 .pd-right button{
     border:0;
