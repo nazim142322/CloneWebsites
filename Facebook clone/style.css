@@ -530,7 +530,7 @@ footer{
     border-radius:6px;
     margin-bottom: 14px;   
 }
-/*--------- section profile-details------------ */
+/*---------profile-details------------ */
 .profile-details{
     background:var(--bg-color);
     padding:20px;
@@ -601,7 +601,7 @@ footer{
 .pd-right a img{
     width:20px;
 }
-/* ----------section profile-info----------- */
+/* ----------profile-info----------- */
 .profile-info{
     display:flex;
     align-items:flex-start;
@@ -627,14 +627,14 @@ footer{
 .profile-intro h3{
     font-weight: 600;   
 }
-.intro-text{
+.profile-intro .intro-text{
     /* border:1px solid yellow; */
     text-align:center;
     margin:10px 0;
     font-size:15px;
     line-height:1.5;
 }
-.intro-text img{
+.profile-intro .intro-text img{
     width:15px;
     margin-bottom:-3px;
 }
@@ -644,4 +644,72 @@ footer{
     background: #CCC;
     margin-block:24px 
 }
-/* 3:19 */
+.profile-intro ul{
+    /* list-style:none;     */    
+}
+.profile-intro ul li{
+    list-style:none;
+    display:flex;    
+    align-items: center;
+    gap:10px;
+    font-size:15px;
+    margin-block:15px;
+}
+.profile-intro ul li img{
+    width:26px;
+}
+/*------- sec photos  all-photos-------- */
+.title-box{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+.title-box a{
+    text-decoration: none;
+    color:#1876f2;
+    font-size:14px;
+}
+.photo-box{
+    display:grid;
+    /* grid-template-columns:repeat(auto-fit, minmax(70px, 1fr)); */
+    grid-template-columns:repeat(3, auto);
+    grid-gap:10px;
+    place-items:center;
+} 
+.photo-box div img{
+    width:100%;
+    cursor:pointer;
+}
+/*------- sec friends  all-friends-------- */
+.profile-intro p{   
+    font-size:14px;
+    /* margin-bottom:15px; */
+}
+.friends-box{
+    display:grid;
+    /* grid-template-columns:repeat(auto-fit, minmax(70px, 1fr)); */
+    grid-template-columns:repeat(3, auto);
+    grid-gap:10px;    
+    place-items:center;
+    margin-top:15px;
+} 
+.friends-box div img{
+    width:100%;
+    cursor:pointer;  
+}
+.friends-box div{   
+    position:relative;
+    /* background-image:linear-gradient(transparent, rgba(0,0,0,0.8));     */
+    padding-bottom:20px;
+    margin-bottom:8px;
+}
+.friends-box p{
+    white-space: nowrap;
+    position:absolute;   
+    bottom:0;
+    left:0;
+    width:100%;
+    text-align:center;    
+}
+/* 3:33 */
