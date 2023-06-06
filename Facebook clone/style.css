@@ -23,7 +23,7 @@ body{
 nav{
     display:flex;
     background-color:var(--nav-color);
-    padding:10px 5%;;
+    padding:15px 5%;;
     align-items:center;
     justify-content:space-between;  
     position:sticky;
@@ -39,16 +39,30 @@ nav{
 }
 .nav-left ul{
     display:flex;
-    gap:15px;
+    gap:20px;
     list-style: none;   
     align-items:center;   
 }
 .nav-left ul li{
     display:grid;
     place-items:center;
+    position:relative;    
+}
+.nav-left ul li span{
+    font-size:11px;
+    color:white;
+    height:22px;
+    width:22px;
+    background-color:red;
+    border-radius:50%;    
+    position:absolute;
+    top:-15px;
+    right:-10px;
+    display:grid;
+    place-items:center; 
 }
 .nav-left ul li img{    
-    max-width:28px;
+    max-width:28px;    
 }
 .nav-right {
     display:flex;
@@ -606,16 +620,13 @@ footer{
     display:flex;
     align-items:flex-start;
     justify-content: space-between;
-    margin-top:20px;
-    border:1px solid red;
+    margin-top:20px;   
 }
-.info-col{
-    border:1px solid green;
+.info-col{   
     flex-basis:33%;
     /* padding:0 20px; */
 }
-.post-col{
-    border:1px solid red;
+.post-col{   
     flex-basis:65%;
 }
 .profile-intro{
@@ -689,9 +700,9 @@ footer{
 .friends-box{
     display:grid;
     /* grid-template-columns:repeat(auto-fit, minmax(70px, 1fr)); */
-    grid-template-columns:repeat(3, auto);
+    grid-template-columns:repeat(3,auto);
     grid-gap:10px;    
-    place-items:center;
+    /* place-items:center; */
     margin-top:15px;
 } 
 .friends-box div img{
@@ -712,4 +723,4 @@ footer{
     width:100%;
     text-align:center;    
 }
-/* 3:33 */
+/* 3:37 */
