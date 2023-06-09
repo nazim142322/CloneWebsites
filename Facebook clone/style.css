@@ -4,6 +4,10 @@
     box-sizing: border-box;    
     /* border:1px solid green; */
 }
+/* ::placeholder{    
+    font-size:15px;
+    letter-spacing:1px;
+} */
 :root {
     --body-color:#efefef;
     --nav-color: #1876f2;
@@ -53,7 +57,7 @@ nav{
     color:white;
     height:22px;
     width:22px;
-    background-color:red;
+    background-color:rgb(255, 15, 15);
     border-radius:50%;    
     position:absolute;
     top:-15px;
@@ -68,7 +72,7 @@ nav{
     display:flex;
     align-items:center;
     justify-content: center;
-    gap:30px;
+    gap:30px;    
 }
 .searchbox{
     display:flex;
@@ -723,4 +727,62 @@ footer{
     width:100%;
     text-align:center;    
 }
-/* 3:37 */
+ /*----------------media query for home page----------- */
+ @media (max-width: 900px){
+    .right-sidebar{
+        display:none;
+    }
+    .left-sidebar{
+        display:none;
+    }
+    nav{
+        flex-wrap:wrap;
+    }
+    .searchbox{
+        display:none;
+    }
+    .logo{
+        width:110px;
+        margin-right:20px;
+    }
+    .nav-left ul li img{
+        width:20px;
+        margin:0 8px;
+     }
+     .nav-user-icon img {
+        width:30px;        
+     }
+     .nav-user-icon{
+        margin-left:0;       
+     }
+     .add-post-links{
+        flex-wrap:wrap;
+     }
+     .add-post-links a{
+        margin-right:12px;
+        font-size:9px;
+     }
+     .add-post-links a img{
+        width:16px;
+        margin-right:5px;
+        margin-block:3px;  
+     }
+     .main-content{
+        flex-basis:100%;
+     }
+     .story img{
+        width:30px;
+        border-width:1.5px;  
+    }
+     .story p{
+        font-size:10px;
+     }
+     .story.story1 img{
+        width:25px;
+        bottom:30px; 
+     }
+     .post-input-container{
+         padding-left:0; 
+     }
+    }
+    /* 3:47 */
