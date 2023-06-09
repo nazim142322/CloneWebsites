@@ -764,7 +764,7 @@ footer{
      }
      .add-post-links a img{
         width:16px;
-        margin-right:5px;          
+        margin-right:-5px;                
      }
      .main-content{
         flex-basis:100%;
