@@ -32,14 +32,15 @@ nav{
     justify-content:space-between;  
     position:sticky;
     top:0; 
-    z-index:100;
+    z-index:100;    
 }
 .logo{
     width:160px;
     margin-right:45px;     
 }
 .nav-left{
-    display:flex;   
+    display:flex;    
+    align-items:center;   
 }
 .nav-left ul{
     display:flex;
@@ -72,7 +73,7 @@ nav{
     display:flex;
     align-items:center;
     justify-content: center;
-    gap:30px;    
+    gap:30px; 
 }
 .searchbox{
     display:flex;
@@ -730,7 +731,7 @@ footer{
  /*----media query for home page---- */
  @media (max-width: 900px){
     .nav-left ul{         
-         gap:5px; 
+         gap:10px; 
     }
     .right-sidebar{
         display:none;
