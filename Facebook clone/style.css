@@ -660,7 +660,7 @@ footer{
     margin-block:24px 
 }
 .profile-intro ul{
-    /* list-style:none;     */    
+    /*list-style:none;*/    
 }
 .profile-intro ul li{
     list-style:none;
@@ -727,8 +727,11 @@ footer{
     width:100%;
     text-align:center;    
 }
- /*----------------media query for home page----------- */
+ /*----media query for home page---- */
  @media (max-width: 900px){
+    .nav-left ul{         
+         gap:5px; 
+    }
     .right-sidebar{
         display:none;
     }
@@ -784,4 +787,30 @@ footer{
          padding-left:0; 
      }
     }
-    /* 3:47 */
+    /*-----media query for profile page----*/
+    @media (max-width:900px){
+        .profile-container{
+            padding:20px 5%;
+        }
+        .profile-details{
+            flex-wrap:wrap;
+        }
+        .pd-row div h3 {
+            font-size:16px;
+        }
+        .pd-right{           
+            text-align:left;
+            margin-top:15px;
+        }
+        .pd-right button{
+            flex-wrap:wrap;
+            margin-left:0;           
+        }
+        .profile-info{
+            flex-wrap:wrap;
+        }
+        .info-col, .post-col{
+            flex-basis:100%;
+        }
+    }
+
